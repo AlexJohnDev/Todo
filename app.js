@@ -2,6 +2,14 @@ $(document).ready(function () {
   // Function to fetch data and populate the table
   // This can be in a separate file or embedded here
 
+  $("#pagination").twbsPagination({
+    totalPages: 10,
+    visiblePages: 5,
+    next: "Next",
+    prev: "Prev",
+    onPageClick: function (event, page) {},
+  });
+
   let $tableData = $("#dataTable");
   $.ajax({
     url: "https://jsonplaceholder.typicode.com/todos",

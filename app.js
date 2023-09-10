@@ -38,6 +38,11 @@ $(document).ready(function () {
             });
           },
         });
+        // Sorting functionality
+        $($tableData).tablesort();
+        $("thead th.int").data("sortBy", function (th, td, tablesort) {
+          return parseInt(td.text());
+        });
       }
     },
   });

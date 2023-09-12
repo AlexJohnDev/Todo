@@ -12,7 +12,7 @@ $(document).ready(function () {
 
       // Linking data's userID to corresponding page in pagination
       if (($userIdentification = page)) {
-        $("#dataTable tbody").text([$userIdentification[0]]);
+        $("tbody").text([$userIdentification[0]]);
         // Call to API via AJAX
         $.ajax({
           url: "https://jsonplaceholder.typicode.com/todos",
@@ -38,12 +38,12 @@ $(document).ready(function () {
             });
           },
         });
-        // Sorting functionality
-        $($tableData).tablesort();
-        $("thead th.int").data("sortBy", function (th, td, tablesort) {
-          return parseInt(td.text());
-        });
       }
+      // Sorting functionality
+      $($tableData).tablesort();
+      $("thead th.int").data("sortBy", function (th, td, tablesort) {
+        return parseInt(td.text());
+      });
     },
   });
 

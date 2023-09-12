@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">    <link
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
@@ -22,8 +23,8 @@
       <div class="row">
         <div class="col-md-12">
           <h1>Todo App</h1>
-           <!--Search bar-->
-           <div class="input-group mb-3">
+          <!--Search bar-->
+          <div class="input-group mb-3">
             <input
               id="myInput"
               type="text"
@@ -34,18 +35,24 @@
           </div>
           <!--Search bar end-->
           <div class="table-responsive">
-          <table id="dataTable" class="table table-striped table-hover">
-            <thead class="text-nowrap">
-              <tr>
-                <th class="header int">ID<span><i class="fa-solid fa-sort fa-fw"></i></span></th>
-                <th class="header">Title<span><i class="fa-solid fa-sort fa-fw"></i></span></th>
-                <th class="header">Completed<span><i class="fa-solid fa-sort fa-fw"></i></span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Table rows will be dynamically added here -->
-            </tbody>
-          </table>
+            <table id="dataTable" class="table table-striped table-hover">
+              <thead class="text-nowrap">
+                <tr>
+                  <th class="header int">
+                    ID<span><i class="fa-solid fa-sort fa-fw"></i></span>
+                  </th>
+                  <th class="header">
+                    Title<span><i class="fa-solid fa-sort fa-fw"></i></span>
+                  </th>
+                  <th class="header">
+                    Completed<span><i class="fa-solid fa-sort fa-fw"></i></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Table rows will be dynamically added here -->
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -53,8 +60,15 @@
       <div class="table-responsive">
         <ul id="pagination"></ul>
       </div>
-    </div>
 
+      <div class="mb-4">
+        <a
+          class="text-primary"
+          href="https://github.com/AlexJohnDev/Todo"
+          target="_blank"
+          >Github Link</a
+        >
+      </div>
     </div>
 
     <!-- Include jQuery and Bootstrap JS -->
